@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html{
+	height: 100%;
+	margin:0%;
+    padding:0%;
+	font-family:'Helvetica Neue', Helvetica, 'sans-serif';
+	color: #ffffff;
+	font-size: 17px;
+	text-align: center;
+	background: #3E3E3E;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+#sidebar{
+	background: #313131;
+	width: 150px;
+	height: 100%;
+	display: block;
+	position: fixed;
+	left: -150px;
+	top: 0%;
+	transition: left 0.3s linear;
+
+}
+
+#sidebar.visible{
+	left:0%;
+	transition: left 0.3s linear;
+	mix-blend-mode: overlay;
+}
+
+.parallax {
+	background-image: url(images/90s.jpg);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li{
+	list-style: none;
+	
+}
+
+ul li a{
+	color: #E0A61D;
+	border-bottom: 1px solid #313131;
+	display: block;
+	width: inherit;
+	padding: 9% 4%;
+	text-decoration: none;
+	background-blend-mode: overlay;
+	font-family: "Permanent Marker";
+	float:inherit;
+	
+}
+
+#sidebar-button{
+	display: inline-block;
+	vertical-align: middle;
+	width: 13%;
+	height: 15%;
+	cursor: pointer;
+	margin: 10%;
+	position: absolute;
+	top: 0%;
+	right: -35%;
+}
+
+#sidebar-button span{
+	height: 1.5%;
+	background: #7B212A;
+	margin-bottom: 18%;
+	display: block;
+}
+
+#sidebar-button span:nth-child(2){
+	width: 75%;
+}
+
+#sidebar-button span:nth-child(3){
+	width: 20%;
+}
+
+.home{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	text-align: center;
+	letter-spacing: 3em;
+	text-transform: uppercase;
+	font-family: "Permanent Marker";
+	font-size: 150%;
+}
+
+h2{
+	text-align: center;
+	letter-spacing: 3em;
+	text-transform: uppercase;
+	font-family: "Permanent Marker";
+	font-size: 120%;
+}
+
+#bio-img{
+	border: 6px #E0A61D groove;
+	border-radius: 50%;
+	width: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vivify{
+	max-width: 15%;
+	height: auto;
+	left: 0px;
+	right: 0px;
+}
+
+.vivify img{
+	width: 100%;
+	float: left;
+	
+}
+
+
+#slideshow {
+	margin: 0 auto;
+	padding-top: 50px;
+	height: 600px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.entire-content {
+	margin: auto;
+	width: 190px;
+	perspective: 1000px;
+	position: relative;
+	padding-top: 80px;
+}
+
+.content-carrousel {
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 20s infinite linear;
+	transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.content-carrousel figure {
+	width: 100%;
+	height: inherit;
+	border: 0px solid #3b444b;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(40deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(80deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(300px); 
+} 
+
+.shadow {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 200ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover {
+	transform: scale(2.0);
+	transition: all 300ms;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
+.bio {
+  display: flex;
+  padding: 0em;
+}
+
+.bio-description {
+  background: #E0A61D;
+  width: 70%;
+  padding: 5em 5em 5em;
+}
+
+.uni1-description{
+	background: #E0A61D;
+	width: 70%;
+	padding: 5em 5em;
+	display: flex;
+}
+
+.personal div{
+	background: #E0A61D;
+	margin-left: 30%;
+	width: 70%;
+	padding: 3em 2em 3em 30em;
+	display: flex;
+}
+
+.commission div{
+	background: #E0A61D;
+	width: 70%;
+	padding: 3em 2em 3em 8em;
+	display: flex;
+}
+
+
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #E0A61D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #7B212A;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+	margin-left: 30%;
+    background-color: #26223E;
+    padding: 2em 2em 2em 30em;
+}
+
+
+footer {
+  margin-top: 3em;
+  padding: 5em 0 2em;
+  height: 2vw;
+  background-image:-moz-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+  background-image: -webkit-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+  background-image: -ms-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+}
+
+#social img{
+	height: 45px;
+	margin: -2em 1em 0em 1em;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+
+/* media queries */
+

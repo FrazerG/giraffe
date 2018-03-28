@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   	<meta charset="UTF-8">
+<title>Giraffe</title>
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+   	<link href="style.css" rel="stylesheet" text="text/css">
+	<link rel="stylesheet" href="style.js">
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script>$(document).ready(function(){
+					$('#sidebar-button').click(function(){
+						$('#sidebar').toggleClass('visible');
+					});
+				 });</script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	
+</head>
+	
+	
+	
+	
+<body>
+
+	<div id="sidebar">
+	
+	   	<ul>
+			  <li><a href="#home">Home</a></li>
+			  <li><a href="#bio">Bio</a></li>
+			  <li><a href="#portfolio">Portfolio</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			  <li><a href="#footer">Social</a></li>
+			  
+ 		<div id="sidebar-button">
+		     <span></span>
+		     <span></span>
+		     <span></span>
+	    </div>
+	    </ul>
+	</div>
+	
+	<div id="home"></div>
+	<div class="parallax"></div>
+	
+    <main>
+		<section class="intro" id="bio">
+			<h1>FRAZER GEE</h1>
+		</section>
+	</main>
+	
+	<section class="bios">
+		<article class="bio">
+			<div class="bio-img">
+				<figure><img src="images/me.jpg" alt="Frazer" id="bio-img"></figure>
+			</div>
+			
+			<div class="bio-description">
+				<p>
+					Student of Nottingham, currently in first year of study on an animation and digital design degree.
+					<br>
+					My focus is mainly on animation and illustration but have worked on logo/brand designs, basic coding and graphic design.
+					<br>
+					I can work using different mediums for my illustration all dependant on your needs mainly focusing on markers, digital, basic watercolour and have recently started working with some screen printing.
+					<br>
+					Alongside focusing on my uni assignments, I find time for personnal projects I am working on and am also planning on working towards some freelance/commission work in the very near future,
+					<br>
+					any requests please get in touch using the contact page and I will get back to you with availability, time frams and pricing.
+					<br>
+					<br>
+					Thanks for checking out my page, you can also find me on most other social media platforms, links below..
+					<br>
+					<br>
+					Enjoy..
+				</p>
+			</div>
+		</article>
+	</section>
+	
+	<section id="portfolio">
+		<h1>Uni Projects</h1>
+		<h2>Vivify-Graphic Design</h2>
+		<div class="vivify">
+		<figure><img src="images/Vivify logo.png" alt="vivify" id="logo"></figure>
+		</div>
+				
+	<section id="slideshow">
+			<div class="entire-content">
+				<div class="content-carrousel">
+					<figure class="shadow"><img class="fancybox" alt="Dr" id="dm0" src="images/Dr Moreau mock.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" class="fancybox" alt="Dr" id="dm1" src="images/Dr Moreau front.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="Dr" id="dm2" src="images/Dr Moreau back.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="Time" id="tm0" src="images/The time machine mock.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="Time" id="tm1" src="images/The time machine front.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="Time" id="tm2" src="images/The time mathine back.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="War" id="wo0" src="images/wow mock.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="War" id="wo1" src="images/WoW front.jpg"/></figure>
+					<figure class="shadow"><img class="fancybox" alt="War" id="wo2" src="images/WoW back.jpg"/></figure>
+		</div>
+	</div>
+</section>
+				
+				
+	<div class="uni1-description">
+		<p>My first project was to develop a full brand design, for a theoretical publishing company called Vivify.<br>
+		Along with three book covers for a chosen author, my author was H. G. Wells and the books were..<br>
+		The Time Machine, The War of the Worlds and The Island of Dr Moreau.
+		</p>
+	</div>
+			
+			<article class="uni2">
+				<div class="uni2-description"></div>
+				<div class="uni2-charcter">
+					<figure></figure>
+					<figure></figure>
+					<figure></figure>
+					<figure></figure>
+				</div>
+				<div class="gamevid"></div>
+			</article>
+	</section>
+	
+	<section class="personal">
+		<article>
+			<h1>Personnal</h1>
+			<div>Coming Soon</div>
+		</article>
+	</section>
+	
+	<section class="commission">
+		<article>
+			<h1>Commissions</h1>
+			<div>Contact for details.</div>
+		</article>
+	</section>
+	
+	<div id="contact">
+			<h1>Contact</h1></div>
+	<div class="container">
+  		<form action="action_page.php">
+
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="usa">Asia</option>
+			  <option value="australia">Australia</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">UK</option>
+       		  <option value="usa">USA</option>
+		      
+			</select>
+
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+			<input type="submit" value="Submit">
+
+		</form>
+</div>
+	
+	
+	
+<footer id="footer">
+	<div id="social">
+		<a href="https://www.facebook.com/geefrazer@yahoo.co.uk"><img src="images/Facebook.png" alt="My Facebook"></a>
+  		<a href="https://wwwwww.twitter.com/FrazerGeeDraws"><img src="images/Twitter.png" alt="My Twitter"></a>
+		<a href="https://wwwwww.instagram.com/frazer.illustrations"><img src="images/Instagram.png" alt="My Instagram"></a>
+		<a href="https://wwwwww.behance.net/geefrazera317"><img src="images/Behance.png" alt="My Behance"></a>
+		<a href="https://wwwwww.youtube.com/geefrazer"><img src="images/YouTube 2.png" alt="My Youtube"></a>
+  </div>
+	</footer>
+	
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</body>
+</html>
